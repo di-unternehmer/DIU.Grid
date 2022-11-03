@@ -4,6 +4,8 @@ prototype(DIU.Grid:Content.Structure.Grid.Column.One) < prototype(Neos.Neos:Cont
 
     renderer = DIU.Grid:Components.Molecule.Grid.Column.One {
 
+        gapSpacing = ${q(node).property('gapSpacing')}
+
         classNames = Neos.Fusion:Join {
             @glue = ' '
             addTopSpacingMobile = ${q(node).property('addTopSpacingMobile') ? q(node).property('addTopSpacingMobile') : ''}

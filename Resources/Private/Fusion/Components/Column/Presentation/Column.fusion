@@ -36,6 +36,7 @@ prototype(DIU.Grid:Components.Atom.Column) < prototype(DIU.Grid:Content.ContentC
     content = ''
     classNames = ''
     bgImage = ''
+    styleClass = ''
     # The content collection renderer renders all children of the current node context variable
     # Thus we set the node context variable to the node of the content collection we need to render
     @context.node = ${this.content}
@@ -44,8 +45,12 @@ prototype(DIU.Grid:Components.Atom.Column) < prototype(DIU.Grid:Content.ContentC
     # Attention: Currently there is no way to escape closing-backticks inside the Expression.
     #
     renderer = afx`
-        <div class={'atom-column ' + props.classNames} style={ props.bgImage ? 'background-image: url("' + props.bgImage + '");' : ''}>
-            <Neos.Neos:ContentCollectionRenderer/>
+        <div class={'atom-column ' + props.classNames}>
+            <div class={'atom-column__wrapper ' + props.styleClass}>
+                <div class={'atom-column__background'} style={ props.bgImage ? 'background-image: url("' + props.bgImage + '");' : ''}>
+                    <Neos.Neos:ContentCollectionRenderer/>
+                </div>
+            </div>
         </div>
     `
 }

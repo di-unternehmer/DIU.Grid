@@ -8,6 +8,11 @@ $color-array-grid:
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    &__background,
+    &__wrapper {
+      width: 100%;
+      height: 100%;
+    }
 }
 
 .diu-grid-alignment-center {

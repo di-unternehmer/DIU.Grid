@@ -2,6 +2,8 @@ prototype(DIU.Grid:Content.Structure.Grid.Column.Three) < prototype(Neos.Neos:Co
 
     renderer = DIU.Grid:Components.Molecule.Grid.Column.Three {
 
+        styleClass = ''
+
         classNames = Neos.Fusion:Join {
             @glue = ' '
             addTopSpacingMobile = ${q(node).property('addTopSpacingMobile') ? q(node).property('addTopSpacingMobile') : ''}
