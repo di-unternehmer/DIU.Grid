@@ -88,33 +88,33 @@ prototype(DIU.Grid:Components.Molecule.Grid.Column.Six) < prototype(Neos.Fusion:
         <div class={'row molecule-grid molecule-grid-column-six' + (props.classNames ? ' ' + props.classNames : '')}>
             <DIU.Grid:Components.Atom.Column
                 content={props.column0}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth0 + ' ' + props.color0 + ' ' + props.alignment0}
+                styleClass={props.styleClass + ' ' + props.color0 + ' ' + props.alignment0}
+                classNames={props.columnWidth0}
                 bgImage={props.bgImagePath0}/>
             <DIU.Grid:Components.Atom.Column
                 content={props.column1}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth1 + ' ' + props.color1 + ' ' + props.alignment1}
+                styleClass={props.styleClass + ' ' + props.color1 + ' ' + props.alignment1}
+                classNames={props.columnWidth1}
                 bgImage={props.bgImagePath1}/>
             <DIU.Grid:Components.Atom.Column
                 content={props.column2}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth2 + ' ' + props.color2 + ' ' + props.alignment2}
+                styleClass={props.styleClass + ' ' + props.color2 + ' ' + props.alignment2}
+                classNames={props.columnWidth2}
                 bgImage={props.bgImagePath2}/>
             <DIU.Grid:Components.Atom.Column
                 content={props.column3}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth3 + ' ' + props.color3 + ' ' + props.alignment3}
+                styleClass={props.styleClass + ' ' + props.color3 + ' ' + props.alignment3}
+                classNames={props.columnWidth3}
                 bgImage={props.bgImagePath3}/>
             <DIU.Grid:Components.Atom.Column
                 content={props.column4}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth4 + ' ' + props.color4 + ' ' + props.alignment4}
+                styleClass={props.styleClass + ' ' + props.color4 + ' ' + props.alignment4}
+                classNames={props.columnWidth4}
                 bgImage={props.bgImagePath4}/>
             <DIU.Grid:Components.Atom.Column
                 content={props.column5}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth5 + ' ' + props.color5 + ' ' + props.alignment5}
+                styleClass={props.styleClass + ' ' + props.color5 + ' ' + props.alignment5}
+                classNames={props.columnWidth5}
                 bgImage={props.bgImagePath5}/>
         </div>
     `

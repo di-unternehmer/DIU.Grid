@@ -71,18 +71,18 @@ prototype(DIU.Grid:Components.Molecule.Grid.Column.Three) < prototype(Neos.Fusio
         <div class={'row molecule-grid molecule-grid-column-three' + (props.classNames ? ' ' + props.classNames : '')}>
             <DIU.Grid:Components.Atom.Column
                 content={props.column0}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth0 + ' ' + props.color0 + ' ' + props.alignment0}
+                styleClass={props.styleClass + ' ' + props.color0 + ' ' + props.alignment0}
+                classNames={props.columnWidth0}
                 bgImage={props.bgImagePath0}/>
             <DIU.Grid:Components.Atom.Column
                 content={props.column1}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth1 + ' ' + props.color1 + ' ' + props.alignment1}
+                styleClass={props.styleClass + ' ' + props.color1 + ' ' + props.alignment1}
+                classNames={props.columnWidth1}
                 bgImage={props.bgImagePath1}/>
             <DIU.Grid:Components.Atom.Column
                 content={props.column2}
-                styleClass={props.styleClass}
-                classNames={props.columnWidth2 + ' ' + props.color2 + ' ' + props.alignment2}
+                styleClass={props.styleClass + ' ' + props.color2 + ' ' + props.alignment2}
+                classNames={props.columnWidth2}
                 bgImage={props.bgImagePath2}/>
         </div>
     `
