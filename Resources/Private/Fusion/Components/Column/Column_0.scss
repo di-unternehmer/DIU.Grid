@@ -17,19 +17,19 @@ $color-array-grid:
       height: 100%;
 
       &.m-1 {
-        height: calc(100% - 0.25rem);
-      }
-      &.m-2 {
         height: calc(100% - 0.5rem);
       }
-      &.m-3 {
+      &.m-2 {
         height: calc(100% - 1rem);
       }
+      &.m-3 {
+        height: calc(100% - 2rem);
+      }
       &.m-4 {
-        height: calc(100% - 1.5rem);
+        height: calc(100% - 3rem);
       }
       &.m-5 {
-        height: calc(100% - 3rem);
+        height: calc(100% - 6rem);
       }
     }
 }
